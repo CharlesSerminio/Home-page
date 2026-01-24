@@ -43,6 +43,12 @@ nav {
 .nav-links li a:hover {
     color: #f18930;
 }
+.nav-links #home {
+    color: #bfbfbf;
+}
+.nav-links #home:hover {
+    color: #f18930;
+}
 .searchBar {
     font-family: "Lexend", sans-serif;
     width: 10rem;
@@ -179,4 +185,105 @@ h3{
 }
 h3:hover {
     color: #0a0a0a;
+}
+#boton {
+    color: #bfbfbf;
+    transition: 0.3s;
+}
+#boton:hover {
+    color: #f18930;
+}
+.dropdown {
+    display: inline-block;
+    z-index: 1;
+}
+.dropdown button {
+    font-family: "Lexend", sans-serif;
+    font-size: 1.05rem;
+    font-weight: 800;
+    text-decoration: none;
+    color: #faf7f0;
+    background-color: #0a0a0a;
+    padding-bottom: 10px;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.dropdown .content a {
+    font-family: "Outfit", sans-serif;
+    font-weight: 600;
+    display: block;
+    color: #2a2a2a;
+    text-decoration: none;
+    text-align: center;
+    padding: 10px 10px;
+    transition: 0.1s;
+}
+.dropdown .content {
+    display: none;
+    position: absolute;
+    left: 165px;
+    width: 200px;
+    background-color: #cacaca;
+    box-shadow: 0px 10px 25px 0px rgba(0,0,0,0.5);
+    -webkit-box-shadow: 0px 10px 25px 0px rgba(0,0,0,0.5);
+    -moz-box-shadow: 0px 10px 25px 0px rgba(0,0,0,0.5);
+}
+.dropdown:hover .content {
+    display: block;
+}
+.dropdown:hover button {
+    color: #f18930;
+}
+.dropdown a:hover {
+    color: #faf7f0;
+    background-color: #f18930;
+}
+.grid-container h2 {
+    font-family: "Outfit", sans-serif;
+    font-size: 1.25rem;
+    color: #faf7f0;
+    padding: 15px 0 0;
+}
+.grid-container h2 a {
+    color: #faf7f0;
+    text-decoration: none;
+    transition: 0.2s;
+}
+.grid-container h2 a:hover {
+    color: #f18930;
+}
+.card1 {
+    padding: 2em;
+    border-radius: 10px;
+    background-color: #2a2a2a;
+    text-align: center;
+}
+.grid-container {
+    display: grid;
+    justify-content: center;
+    padding: 0 140px;
+    grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+    grid-template-rows: 450px 450px 450px;
+    gap: 40px;
+}
+.grid-container .card1 img {
+    border-radius: 10px;
+    width: 320px;
+}
+.grid-container .card1 .ome {
+    border-radius: 10px;
+    width: 320px;
+    height: 320px;
+}
+.subtitle {
+    display: flex;
+    padding: 0 150px 10px;
+    background-color: transparent;
+}
+.subtitle h2 {
+    font-family: "Lexend", sans-serif;
+    font-size: 1.5rem;
+    font-weight: 900;
+    color: #faf7f0;
 }
